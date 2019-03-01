@@ -1,23 +1,43 @@
   body,html {
-    margin: 0;
-    padding: 0;
+    margin: 0x;
+    padding: 00px;
     font-family: sans-serif;
     box-sizing: border-box;
-    height: 100%
+    height: 100%;
+    width: 100%;
+  }
+
+  #options {
+    text-align: center;
+    margin: 10px;
   }
 
   #container {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    /* z-index: 15; */
+    top: 25%;
+    left: 25%;
     display: grid;
+    /* width: 600px; */
+    text-align: center;
   }
 
   .row {
     grid-row-start: 2;
     grid-row-end: span 2;
     margin: 0px;
+    border: 0px;
   }
 
   .gridsquare {
-    grid-column-start: 1;
-    grid-column-end: span col4-start;
-    margin: 5px;
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    margin: 0px;
+    border: opx;
   }
+
+  /* .gridsquare:hover {
+      background-color: yellow;
+  } */

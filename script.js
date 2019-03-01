@@ -4,6 +4,10 @@ const container = document.querySelector('#container');
 
 /********** Event Listeners **********/
 
+container.addEventListener("mouseover", function (event) {
+    event.target.style.background = 'blue';
+}, false);
+
 /********** Functions **********/
 
 function genDivs(v){ 
@@ -15,7 +19,7 @@ function genDivs(v){
           var cell = document.createElement("div"); 
           cell.className = "gridsquare"; 
           cell.innerText = (i * v) + x;
-          cell.setAttribute('style', 'color: white; background: black');  
+          cell.setAttribute('style', 'aspect-ratio: 1/1');
           row.appendChild(cell); 
       } 
       container.appendChild(row); 
