@@ -13,31 +13,15 @@
   }
 
   #container {
-    position: absolute;
-    width: 300px;
-    height: 200px;
-    /* z-index: 15; */
-    top: 25%;
-    left: 25%;
+    width: 100%;
+    max-width: 450px;
+    height: 100vw;
+    max-height: 450px;
     display: grid;
-    /* width: 600px; */
+    margin: auto;
     text-align: center;
+    background-color: ghostwhite;
+    border-style: groove;
+    border-color: rgba(255, 0, 0, 0.438);
+    border-width: 7px;
   }
-
-  .row {
-    grid-row-start: 2;
-    grid-row-end: span 2;
-    margin: 0px;
-    border: 0px;
-  }
-
-  .gridsquare {
-    grid-column-start: 2;
-    grid-column-end: span 2;
-    margin: 0px;
-    border: opx;
-  }
-
-  /* .gridsquare:hover {
-      background-color: yellow;
-  } */
